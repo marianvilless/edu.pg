@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marianville Secondary School</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .main-layout {
+            display: flex;
+            flex: 1;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center the nav */
+            background: #f2f2f25e;
+        }
+        header nav ul li {
+            margin: 0;
+        }
+        header nav ul li a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px 6px;
+            text-decoration: none;
+            color: #fff;
+            background: #ee892b9c;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(238,137,43,0.10);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        header nav ul li a:hover {
+            background: #d65a29;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(214,90,41,0.15);
+        }
+        .sidebar {
+            width: 200px;
+            background: #fff3e6cc;
+            padding: 24px 0 0 0;
+            box-shadow: 2px 0 8px rgba(214,90,41,0.07);
+            min-height: 100vh;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            margin: 0;
+        }
+        .sidebar ul li a {
+            display: block;
+            padding: 14px 24px;
+            margin: 8px 12px;
+            text-decoration: none;
+            color: #c03b07;
+            background: #fff;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .sidebar ul li a:hover {
+            background: #d65a29;
+            color: #fff;
+        }
+        .content {
+            flex: 1;
+            padding: 32px;
+            background: rgba(255,255,255,0.85);
+            min-height: 100vh;
+        }
+        @media (max-width: 900px) {
+            .main-layout {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                min-height: unset;
+                box-shadow: none;
+                padding: 0;
+            }
+            .content {
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Marianville Server</h1>
+    
+
+    <style>
+        body {
+            background-image: url('mville.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="exercises.html">Grade 11 ICT</a></li>
+                <li><a href="Grade12.html">Grade 12 ICT</a></li>
+                <li><a href="mathematics.html">Department</a></li>
+                <li><a href="Grade9.html">Grade 9 ICT</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <h1>Student List</h1>
+            <form method="post">
+                <input name="name" placeholder="Enter student name" required>
+                <button type="submit">Add Student</button>
+            </form>
+            <!-- Your student list and delete form here -->
+        </main>
+    </div>
+    <footer>
+        <p>&copy;Sample page compiled by Mr. Marampau&trade;</p>
+    </footer>
+</body>
+</html>
+

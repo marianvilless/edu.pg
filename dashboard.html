@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ username }}'s Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f6f2;
+            margin: 0;
+            padding: 0;
+        }
+        .dashboard-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(46,95,167,0.08);
+            padding: 32px;
+        }
+        h1 {
+            color: #d65a29;
+        }
+        .logout-link {
+            display: inline-block;
+            margin-top: 24px;
+            color: #c03b07;
+            text-decoration: underline;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .logout-link:hover {
+            color: #d65a29;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>This is your personal dashboard. Here you can access your resources and files.</p>
+        <a class="logout-link" href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>

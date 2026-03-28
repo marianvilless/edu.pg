@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade9 - Marianville Secondary School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #f5f7fa;
+        }
+        header {
+            position: relative;
+            background-color: #8b5309;
+            background-image: url('mville.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 18px 0 10px 0;
+            text-align: center;
+            box-sizing: border-box;
+            /* Add a dark overlay using a pseudo-element */
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(30, 20, 10, 0.55); /* dark overlay */
+            z-index: 0;
+        }
+        #logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        header h1, header p, header nav {
+            position: relative;
+            z-index: 1;
+        }
+        header h1 {
+            color: #ffe082;
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 2rem;
+            text-shadow: 0 2px 8px #000a;
+        }
+        header p {
+            color: rgb(255, 230, 180);
+            margin: 0 0 0.5rem 0;
+            font-weight: bold;
+            text-shadow: 0 1px 4px #000a;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #f2f2f25e;
+        }
+        header nav ul li {
+            margin: 0;
+        }
+        header nav ul li a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px 6px;
+            text-decoration: none;
+            color: #fff;
+            background: #ee892b9c;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(238,137,43,0.10);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        header nav ul li a:hover {
+            background: #d65a29;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(214,90,41,0.15);
+        }
+        .main-layout {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 220px;
+            background: #fff3e6cc;
+            padding: 24px 0 0 0;
+            box-shadow: 2px 0 8px rgba(214,90,41,0.07);
+            min-height: 100vh;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            margin: 0;
+        }
+        .sidebar ul li a {
+            display: block;
+            padding: 14px 24px;
+            margin: 8px 12px;
+            text-decoration: none;
+            color: #c03b07;
+            background: #fff;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .sidebar ul li a:hover {
+            background: #d65a29;
+            color: #fff;
+        }
+        .content {
+            flex: 1;
+            padding: 32px;
+            background: rgba(255,255,255,0.95);
+            min-height: 100vh;
+        }
+        @media (max-width: 900px) {
+            .main-layout {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                min-height: unset;
+                box-shadow: none;
+                padding: 0;
+            }
+            .content {
+                padding: 16px;
+            }
+        }
+        footer {
+            text-align: center;
+            color: #888;
+            margin: 2rem 0 1rem 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="mville.jpg" alt="Marianville Logo">
+        <h1>Grade 9 - Marianville Secondary School</h1>
+        <p>To Show God's Love</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#html-lesson">HTML Lesson</a></li>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#cpu-comparisons">CPU Comparisons</a></li>
+                <li><a href="#gpu-comparisons">GPU Comparisons</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resources">Downloadable Resources</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <!-- Place your Grade 9 content here -->
+            <h2 id="welcome" style="margin-top: 0;">Welcome, Grade 9 Students!</h2>
+            <p>
+                This page is reserved for Grade 9 Computer Students. 
+            </p>
+            <h3 id="html-lesson">HTML Lesson</h3>
+
+            <p> we are still developing your page. Below are grade 12 contents so ignore them. But navigate to where it says
+                <strong> Downloadable resources</strong>
+            </p>
+            <p>
+                <strong>How to run this HTML file using a simple Python web server:</strong>
+            </p>
+            <ol>
+                <li>
+                    Make sure your <code>index.html</code> file is saved in a folder (for example, <code>C:\Users\YourName\MyWebsite</code>).
+                </li>
+                <li>
+                    In the same folder, create a file named <code>server.py</code> with the following content:
+                    <pre><code>import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print(f"Serving at http://localhost:{PORT}")
+    httpd.serve_forever()
+</code></pre>
+                </li>
+                <li>
+                    Open a terminal or command prompt, navigate to your folder, and run:
+                    <pre><code>python server.py</code></pre>
+                </li>
+                <li>
+                    Open your web browser and go to <a href="http://localhost:8000/Grade12.html" target="_blank">http://localhost:8000/Grade12.html</a>
+                </li>
+            </ol>
+            <p>
+                This will let you view your HTML file locally as a website.
+            </p>
+            <ul>
+                <li><a href="#">Grade 12 Timetable</a></li>
+                <li><a href="#">Exam Schedules</a></li>
+                <li><a href="#">University Application Guide</a></li>
+                <li><a href="#">Study Resources</a></li>
+                <li><a href="#">Counseling & Support</a></li>
+            </ul>
+            <h3 id="upcoming-events">Upcoming Events</h3>
+            <ul>
+                <li>Independence Celebz</li>
+                <li>Mock Exams</li>
+                <li>Exams</li>
+            </ul>
+            <!--  -->  
+            <h3 id="summary">Summary</h3>
+            <ol> <li>You created a folder</li>
+                <li>You created different pages &#40; index.html, about.html, etc &#41; </li>
+                <li>You created a Python script to serve the HTML files</li>
+                <li>You ran the Python script to start a local web server</li>
+                <li>You accessed your HTML files in a web browser using the local server URL</li>
+                <li>You can now view and test your HTML pages as if they were hosted on a real website</li><br><br><br><br>
+
+
+                <h1> 12.5.2.1; Relate and analyze the specifications of computer components to user requirements and produce graphical products using computer aided programs</h1>
+                    <section>
+                        <h2>Unit 2: Computer Software</h2>
+                        <h3>Benchmark 12.5.2.1</h3>
+                        <p>
+                            <strong>Relate and analyze the specifications of computer components to user requirements and produce graphical products using computer aided programs</strong>
+                        </p>
+                        <h4>Break Down</h4>
+                        <ul>
+                            <li>
+                                <strong>Key Components:</strong>
+                                <ul>
+                                    <li><strong>Specifications of Computer Components:</strong>
+                                        <ul>
+                                            <li>Understanding hardware specifications (CPU, RAM, GPU, storage).</li>
+                                            <li>Knowledge of software compatibility and performance metrics.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>User Requirements:</strong>
+                                        <ul>
+                                            <li>Identifying user needs (gaming, business, graphic design).</li>
+                                            <li>Analyzing how specifications meet or exceed these needs.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Graphical Products:</strong>
+                                        <ul>
+                                            <li>Proficiency in using computer-aided design (CAD) software.</li>
+                                            <li>Skills in creating and modifying graphical representations.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Expectations</h4>
+                        <p>
+                            <strong>What Students Should Learn and Achieve:</strong>
+                            <ul>
+                                <li>Analyze and relate different computer component specifications to various user requirements.</li>
+                                <li>Demonstrate proficiency in producing graphical products using CAD software, ensuring they meet identified specifications and user needs.</li>
+                            </ul>
+                        </p>
+                        <h4>Learning Targets</h4>
+                        <ul>
+                            <li>
+                                <strong>Specifications of Computer Components:</strong>
+                                <br>
+                                Target: Analyze and compare at least three different CPU and GPU specifications based on user requirements for performance.
+                            </li>
+                            <li>
+                                <strong>User Requirements:</strong>
+                                <br>
+                                Target: Develop a user profile and justify component selection based on specific needs, detailing at least three variables (e.g., budget, performance, application).
+                            </li>
+                            <li>
+                                <strong>Graphical Products:</strong>
+                                <br>
+                                Target: Create a detailed graphical product using CAD software that reflects user needs and incorporates specified components.
+                            </li>
+                        </ul>
+                        <h4>Instruction and Assessment Strategies</h4>
+                        <ul>
+                            <li>
+                                <strong>Teaching Methods:</strong>
+                                <ul>
+                                    <li>Lectures/Discussions: Cover hardware specifications and user requirements.</li>
+                                    <li>Hands-On Activities: Students will assemble a mock computer build based on user profiles.</li>
+                                    <li>CAD Workshops: Guided sessions where students learn to use CAD software effectively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Assessment:</strong>
+                                <ul>
+                                    <li>Project: Students submit a report analyzing a specific user’s needs and recommending a computer build.</li>
+                                    <li>Presentation: Students present their findings and computer build recommendations to the class.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Terms and Definition</h4>
+                        <p>
+                            <strong>CAD</strong> - In information technology, CAD stands for Computer-Aided Design. It refers to the use of computer software to create, modify, analyze, and optimize designs. CAD is widely used in various fields such as architecture, engineering, product design, and manufacturing to develop precise drawings, 3D models, and simulations. It helps improve accuracy, efficiency, and collaboration in the design process.
+                        </p>
+                        <h4>Summarize</h4>
+                        <p>
+                            This standard emphasizes the connection between computer component specifications and user requirements, along with the ability to produce graphical products using CAD software. Students are expected to analyze specifications, justify component choices based on user needs, and demonstrate proficiency in graphical design. The curriculum will engage students through a mix of lectures, hands-on activities, and practical assessments to ensure they meet these learning targets.
+                        </p>
+                    </section>
+                
+                <li>
+                <strong>Part A: Basic Specifications</strong>
+                <ul>
+                    <li>Identify the Processor Type: CPU or GPU?</li>
+                    <li>Core Count / Stream Processors: How many cores or stream processors are there?</li>
+                    <li>Clock Speed: What is the base clock speed (in GHz)?</li>
+                    <li>Memory Type &amp; Size: What type of memory does it use? (e.g., DDR4, GDDR6). How much memory is available? (e.g., 8GB, 12GB)</li>
+                    <li>Power Consumption: What is the TDP (Thermal Design Power)?</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Part B: Intermediate Specifications</strong>
+                <ul>
+                    <li>Architecture: What is the processor’s architecture? (e.g., Intel’s Alder Lake, AMD Ryzen)</li>
+                    <li>Performance Benchmarks: Are there any benchmark scores provided? (e.g., PassMark, 3DMark)</li>
+                    <li>Additional Features: Supports specific technologies? (e.g., ray tracing, DLSS, hyper-threading)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Part C: Advanced Comparison</strong>
+                <ul>
+                    <li>Performance-to-Watt Ratio: How efficient is each processor?</li>
+                    <li>Intended Use Cases: Gaming, professional rendering, scientific computing?</li>
+                    <li>Compatibility: Is the processor compatible with certain motherboards or systems?</li>
+                    <li>Price and Value: Based on specs, what is the approximate value?</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Step 4: Analysis &amp; Discussion</strong>
+                <ul>
+                    <li>Compare your group's CPU and GPU specs.</li>
+                    <li>Which has higher clock speeds? Why might that matter?</li>
+                    <li>Which has more cores or stream processors? How does that affect multitasking or parallel processing?</li>
+                    <li>How do memory types and sizes influence performance?</li>
+                    <li>What features are most relevant for specific tasks?</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Step 5: Monitoring &amp; Assistance</strong>
+                <ul>
+                    <li>Walk around, ask probing questions:</li>
+                    <ul>
+                        <li>Why do higher core counts benefit certain applications?</li>
+                        <li>How do different architectures influence performance?</li>
+                        <li>Can two processors have similar specs but perform differently? Why?</li>
+                    </ul>
+                    <li>Optional: Gradually Introduce Complexity</li>
+                    <ul>
+                        <li>Start with basic specs, then add details like cache sizes, PCIe versions, or overclocking features.</li>
+                        <li>Encourage groups to research real-world performance comparisons.</li>
+                    </ul>
+                </ul>
+            </li>
+
+            
+            </ol>
+            <h3 id="cpu-comparisons">CPU Comparisons</h3>
+            <p>
+                Below are three popular CPUs and GPUs, compared based on typical user performance requirements such as gaming, content creation, and professional workloads.
+            </p>
+            <h4>CPU Comparisons</h4>
+            <table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; background:#f9f6f2;">
+                <thead style="background:#ffe5c7;">
+                    <tr>
+                        <th>Model</th>
+                        <th>Intel Core i9-13th Gen<br>(e.g., i9-13900K)</th>
+                        <th>AMD Ryzen 9 7950X</th>
+                        <th>Intel Core i7-12700K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Architecture</strong></td>
+                        <td>Raptor Lake</td>
+                        <td>Zen 4</td>
+                        <td>Alder Lake</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cores / Threads</strong></td>
+                        <td>24 (8P + 16E) / 32 threads</td>
+                        <td>16 / 32 threads</td>
+                        <td>12 (8P + 4E) / 20 threads</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Base Clock</strong></td>
+                        <td>3.0 GHz (P-core)</td>
+                        <td>4.5 GHz</td>
+                        <td>3.6 GHz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Boost Clock</strong></td>
+                        <td>Up to 5.8 GHz</td>
+                        <td>Up to 5.7 GHz</td>
+                        <td>Up to 5.0 GHz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cache</strong></td>
+                        <td>36MB L3</td>
+                        <td>64MB L3</td>
+                        <td>25MB L3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Performance Focus</strong></td>
+                        <td>High-end gaming &amp; content creation</td>
+                        <td>Extreme gaming &amp; multi-threaded workloads</td>
+                        <td>High-performance gaming &amp; productivity</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><strong>Gaming:</strong> i7-12700K offers excellent performance at a lower cost.</li>
+                <li><strong>Content Creation &amp; Heavy Multithreading:</strong> Ryzen 9 7950X or i9-13900K excel due to higher core counts.</li>
+                <li><strong>Professional Workstations:</strong> i9-13900K provides top-tier performance.</li>
+            </ul>
+
+            <h4>GPU Comparisons</h4>
+            <table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; background:#f9f6f2;">
+                <thead style="background:#ffe5c7;">
+                    <tr>
+                        <th>Model</th>
+                        <th>NVIDIA GeForce RTX 4090</th>
+                        <th>AMD Radeon RX 7900 XTX</th>
+                        <th>NVIDIA GeForce RTX 3080 Ti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Architecture</strong></td>
+                        <td>Ada Lovelace</td>
+                        <td>RDNA 3</td>
+                        <td>Ampere</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VRAM</strong></td>
+                        <td>24GB GDDR6X</td>
+                        <td>24GB GDDR6</td>
+                        <td>12GB GDDR6X</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CUDA Cores / Stream Processors</strong></td>
+                        <td>16,384 CUDA cores</td>
+                        <td>6,144 Stream Processors</td>
+                        <td>10,240 CUDA cores</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ray Tracing &amp; DLSS</strong></td>
+                        <td>Yes, advanced RT cores &amp; DLSS 3</td>
+                        <td>Yes, supports FidelityFX Super Resolution</td>
+                        <td>Yes, DLSS 2</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Power Consumption</strong></td>
+                        <td>Approx. 450W</td>
+                        <td>Approx. 355W</td>
+                        <td>Approx. 350W</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><strong>High-End Gaming &amp; Creative Work:</strong> RTX 4090 provides unmatched performance for 4K gaming, rendering, and AI workloads.</li>
+                <li><strong>Cost-Effective &amp; High Performance:</strong> RX 7900 XTX offers excellent performance at a lower price point but with slightly less ray tracing capability.</li>
+                <li><strong>Previous Gen &amp; Budget:</strong> RTX 3080 Ti still performs well for gaming and creative tasks but may be less future-proof.</li>
+            </ul>
+
+            <h4>Summary &amp; User Fit</h4>
+            <table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; background:#f9f6f2;">
+                <thead style="background:#ffe5c7;">
+                    <tr>
+                        <th>User Type</th>
+                        <th>Recommended CPU</th>
+                        <th>Recommended GPU</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Casual Gaming</td>
+                        <td>Intel Core i7-12700K</td>
+                        <td>AMD Radeon RX 7900 XTX or RTX 3080 Ti</td>
+                    </tr>
+                    <tr>
+                        <td>Enthusiast Gaming &amp; Streaming</td>
+                        <td>Intel Core i9-13900K</td>
+                        <td>NVIDIA RTX 4090</td>
+                    </tr>
+                    <tr>
+                        <td>Content Creation &amp; Professional Work</td>
+                        <td>AMD Ryzen 9 7950X</td>
+                        <td>NVIDIA RTX 4090 / RTX 4080</td>
+                    </tr>
+                    <tr>
+                        <td>Budget-Conscious High Performance</td>
+                        <td>Intel Core i7-12700K</td>
+                        <td>AMD Radeon RX 7900 XTX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><strong>Balance is key:</strong> Pairing a high-end CPU with a matching GPU ensures balanced performance.</li>
+                <li><strong>Future-proofing:</strong> Investing in the latest generation often provides longer relevance.</li>
+                <li><strong>User needs:</strong> For gaming, GPU is often the bottleneck; for content creation, CPU and GPU both matter.</li>
+            </ul>
+            <div id="exercise" style="background: #fffbe9; border: 2px solid #ffe5c7; border-radius: 10px; padding: 1.5em; margin: 2em 0; box-shadow: 0 2px 8px rgba(214,90,41,0.08);">
+            <h2>Exercise: Computer Hardware Planning Task</h2>
+            <p>
+                <strong>Scenario:</strong> Imagine you are designing computers for three different users: a <strong>Gamer</strong>, a <strong>Scientist</strong>, and a <strong>Student</strong>. For each user, choose the most appropriate components based on their needs.
+            </p>
+            <ul>
+                <li>CPU (Processor)</li>
+                <li>GPU (Graphics Card)</li>
+                <li>Local Drive (Hard Drive or SSD)</li>
+                <li>Cache</li>
+                <li>RAM (Memory)</li>
+            </ul>
+            <p>
+                <strong>Your Task:</strong><br>
+                For each user, suggest the most suitable CPU, GPU, Local Drive, Cache, and RAM. Justify your choices with a brief explanation of why these components are suitable for that user.
+            </p>
+            <p>
+                <strong>Example Format:</strong>
+                <pre style="background:#f4f4f4; padding:1em; border-radius:6px;">
+      User: Gamer
+
+      CPU:
+      GPU:
+      Local Drive:
+      Cache:
+      RAM:
+      (Provide your choices and explain briefly why they are suitable for a gamer.)
+                </pre>
+            </p>
+            <p>
+                <strong>Hints:</strong>
+                <ul>
+                    <li>Gamers need powerful graphics and fast processing speeds.</li>
+                    <li>Scientists often work with large data sets, simulations, or complex calculations.</li>
+                    <li>Students need a balanced system for studying, browsing, and light multitasking.</li>
+                </ul>
+            </p> </div>
+            <h3 id="contact">Contact</h3>
+            <p>
+                For any questions or support, please contact your Grade 12 coordinator at <a href="mailto:grade12@marianvilless.edu">grade12@marianvilless.edu</a>.
+            </p>
+            <h3 id="resources">Downloadable Resources</h3>
+           
+           
+           
+           
+            <ul>
+               
+                <li>
+                    <a href="static/resources/wps_wid.cid-1845990256.1752189869.exe" download>
+                        Download WPS (This is similar to Microsoft Word). Ta. Mr. Marampau
+                    </a>
+                    <p> <pre><code>Take note, this file can be trusted. Ensure any popups for this site is allowed.</code></pre> </p>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        &copy; 2024 Marianville Secondary School
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade 12 - Marianville Secondary School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background-color: #f5f7fa;
+        }
+        header {
+            background-color: #8b5309;
+            background-image: url('mville.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 18px 0 10px 0;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        #logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            margin-bottom: 0.5rem;
+        }
+        header h1 {
+            color: #dd9817be;
+            margin: 0.5rem 0 0.2rem 0;
+            font-size: 2rem;
+        }
+        header p {
+            color: rgb(114, 5, 5);
+            margin: 0 0 0.5rem 0;
+            font-weight: bold;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background: #f2f2f25e;
+        }
+        header nav ul li {
+            margin: 0;
+        }
+        header nav ul li a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px 6px;
+            text-decoration: none;
+            color: #fff;
+            background: #ee892b9c;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            box-shadow: 0 2px 6px rgba(238,137,43,0.10);
+            transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        header nav ul li a:hover {
+            background: #d65a29;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(214,90,41,0.15);
+        }
+        .main-layout {
+            display: flex;
+            flex: 1;
+        }
+        .sidebar {
+            width: 220px;
+            background: #fff3e6cc;
+            padding: 24px 0 0 0;
+            box-shadow: 2px 0 8px rgba(214,90,41,0.07);
+            min-height: 100vh;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar ul li {
+            margin: 0;
+        }
+        .sidebar ul li a {
+            display: block;
+            padding: 14px 24px;
+            margin: 8px 12px;
+            text-decoration: none;
+            color: #c03b07;
+            background: #fff;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.2s, color 0.2s;
+        }
+        .sidebar ul li a:hover {
+            background: #d65a29;
+            color: #fff;
+        }
+        .content {
+            flex: 1;
+            padding: 32px;
+            background: rgba(255,255,255,0.95);
+            min-height: 100vh;
+        }
+        @media (max-width: 900px) {
+            .main-layout {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                min-height: unset;
+                box-shadow: none;
+                padding: 0;
+            }
+            .content {
+                padding: 16px;
+            }
+        }
+        footer {
+            text-align: center;
+            color: #888;
+            margin: 2rem 0 1rem 0;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="mville.jpg" alt="Marianville Logo">
+        <h1>Grade 12 - Marianville Secondary School</h1>
+        <p>To Show God's Love</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>
+                    <a href="Benchmark12524.html" style="background:#d65a29; color:#fff; border-radius:6px; font-weight:700;">
+                        Benchmark 12.5.2.4
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-layout">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#html-lesson">HTML Lesson</a></li>
+                <li><a href="#upcoming-events">Upcoming Events</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#cpu-comparisons">CPU Comparisons</a></li>
+                <li><a href="#gpu-comparisons">GPU Comparisons</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#resources">Downloadable Resources</a></li>
+            </ul>
+        </aside>
+        <main class="content">
+            <!-- Place your Grade 12 content here, unchanged from your previous version -->
+
+
+  <section id="excel-formulas-lesson" style="background: #e8f5e9; border: 2px solid #a5d6a7; border-radius: 10px; padding: 2em; margin: 2em 0;">
+        <h2>Lesson Plan: Excel Formulas</h2>
+        <h3>Section A: Introduction to Excel Formulas (70 Minutes)</h3>
+        <h4>Objective</h4>
+        <p>
+            Students will learn how to create and use basic, intermediate, and advanced Excel formulas to perform calculations and data analysis.
+        </p>
+        <h4>Part 1: Introduction to Excel Formulas (10 minutes)</h4>
+        <ul>
+            <li><strong>What is a formula?</strong> An expression used to perform calculations automatically in Excel.</li>
+            <li><strong>Why use formulas?</strong> To save time, ensure accuracy, and analyze data effectively.</li>
+            <li><strong>Basic syntax:</strong> Formulas start with an equal sign <code>=</code>, followed by the expression (e.g., <code>=A1+B1</code>).</li>
+        </ul>
+        <h4>Part 2: Basic Formulas and Functions (20 minutes)</h4>
+        <ul>
+            <li><strong>Simple calculations:</strong>
+                <ul>
+                    <li>Addition: <code>=A1+B1</code></li>
+                    <li>Subtraction: <code>=A1-B1</code></li>
+                    <li>Multiplication: <code>=A1*B1</code></li>
+                    <li>Division: <code>=A1/B1</code></li>
+                </ul>
+            </li>
+            <li><strong>Using cell references:</strong> Absolute vs. relative references (<code>$A$1</code> vs. <code>A1</code>).</li>
+            <li><strong>Common functions:</strong>
+                <ul>
+                    <li><code>SUM()</code>: Adds a range of cells. Example: <code>=SUM(A1:A5)</code></li>
+                    <li><code>AVERAGE()</code>: Calculates the average. Example: <code>=AVERAGE(B1:B5)</code></li>
+                    <li><code>MIN()</code>, <code>MAX()</code>: Find smallest/largest values.</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Hands-on Activity: Simple Calculations</h5>
+        <ol>
+            <li>Create a new Excel sheet and enter the following data:
+                <table border="1" cellpadding="4" style="margin:1em 0;">
+                    <tr><th>Cell</th><th>Data</th></tr>
+                    <tr><td>A1</td><td>10</td></tr>
+                    <tr><td>A2</td><td>25</td></tr>
+                    <tr><td>B1</td><td>5</td></tr>
+                    <tr><td>B2</td><td>15</td></tr>
+                </table>
+            </li>
+            <li>Perform these calculations:
+                <ul>
+                    <li><strong>Addition:</strong> In C1: <code>=A1+B1</code></li>
+                    <li><strong>Subtraction:</strong> In C2: <code>=A2-B1</code></li>
+                    <li><strong>Multiplication:</strong> In C3: <code>=A1*B2</code></li>
+                    <li><strong>Division:</strong> In C4: <code>=A2/B1</code></li>
+                </ul>
+            </li>
+        </ol>
+        <h5>Part 2: Using Cell References (Absolute vs. Relative)</h5>
+        <ul>
+            <li>In D1, enter <strong>2</strong>.</li>
+            <li>In E1, <code>=A1*D1</code> (relative reference)</li>
+            <li>In F1, <code>=A1*$D$1</code> (absolute reference)</li>
+            <li>Copy E1 and F1 down to E2 and F2. Observe how references change.</li>
+        </ul>
+        <p>
+            <strong>Observation:</strong> Relative references adjust when copied; absolute references stay fixed.
+        </p>
+        <h3>Section B: Using Common Functions</h3>
+        <ul>
+            <li>Enter data in A1:A5: 12, 7, 19, 5, 14</li>
+            <li>In B1: <code>=SUM(A1:A5)</code></li>
+            <li>In B2: <code>=AVERAGE(A1:A5)</code></li>
+            <li>In B3: <code>=MIN(A1:A5)</code></li>
+            <li>In B4: <code>=MAX(A1:A5)</code></li>
+        </ul>
+        <p>
+            <strong>Optional Challenge:</strong> Try <code>COUNT(A1:A5)</code> to count numbers in the range.
+        </p>
+        <h3>Section B: Intermediate Formulas and Logical Functions (20 minutes)</h3>
+        <ul>
+            <li><strong>Conditional formulas:</strong> <code>IF()</code> function. Example: <code>=IF(A1>50, "Pass", "Fail")</code></li>
+            <li><strong>Nested functions:</strong> Example: <code>=SUM(A1:A5)/COUNT(A1:A5)</code></li>
+            <li><strong>Text functions:</strong>
+                <ul>
+                    <li><code>CONCATENATE()</code>, <code>LEFT()</code>, <code>RIGHT()</code>, <code>MID()</code></li>
+                    <li>Example: <code>=LEFT(B2,3)</code> extracts first 3 characters.</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Hands-on Activity: Conditional, Nested, and Text Functions</h5>
+        <ul>
+            <li>Enter scores in A1:A5: 45, 78, 50, 62, 30</li>
+            <li>In B1: <code>=IF(A1>=50, "Pass", "Fail")</code> (drag down to B5)</li>
+            <li>In C1: <code>=AVERAGEIF(A1:A5, ">50")</code></li>
+            <li>In C2: <code>=SUMIF(A1:A5, "<=50")</code></li>
+            <li>In D1: <code>=IF(COUNTIF(A1:A5, ">50")=0, "No high scores", AVERAGEIF(A1:A5, ">50"))</code></li>
+            <li>Text extraction:
+                <ul>
+                    <li>B1:B4: DeepAI, Artificial, Intelligence, Machine</li>
+                    <li>C1: <code>=LEFT(B1,4)</code></li>
+                    <li>C2: <code>=RIGHT(B2,4)</code></li>
+                    <li>C3: <code>=MID(B3,3,4)</code></li>
+                    <li>D1: <code>=CONCATENATE(B1, " ", B2)</code></li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Section C: Advanced Formulas and Techniques</h3>
+        <ul>
+            <li><code>VLOOKUP()</code> and <code>HLOOKUP()</code>: Search for data in a table. Example: <code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></li>
+            <li><code>INDEX()</code> and <code>MATCH()</code>: Flexible lookup functions.</li>
+            <li>Array formulas: <code>{=SUM(A1:A10*B1:B10)}</code> (Ctrl+Shift+Enter)</li>
+            <li><code>IFERROR()</code>: <code>=IFERROR(A1/B1, "Error")</code></li>
+        </ul>
+        <p>
+            <strong>Hands-on:</strong> Use VLOOKUP to fetch product prices from a table.
+        </p>
+        <h4>Wrap-up and Q&amp;A (5 minutes)</h4>
+        <ul>
+            <li>Recap key points</li>
+            <li>Share tips for practicing formulas</li>
+            <li>Address student questions</li>
+        </ul>
+        <hr>
+        <h2>Lesson Title: Data Lookup Functions in Excel: VLOOKUP(), HLOOKUP(), INDEX(), and MATCH()</h2>
+        <h4>Learning Objectives</h4>
+        <ul>
+            <li>Identify the purpose and syntax of <code>VLOOKUP()</code> and <code>HLOOKUP()</code> functions.</li>
+            <li>Learn how to use <code>INDEX()</code> and <code>MATCH()</code> for flexible data retrieval.</li>
+            <li>Apply these functions through practical exercises.</li>
+        </ul>
+        <h4>Lesson Breakdown (50 Minutes)</h4>
+        <ol>
+            <li><strong>Introduction (5 min):</strong> Discuss searching for data in large tables.</li>
+            <li><strong>VLOOKUP() and HLOOKUP() (10 min):</strong>
+                <ul>
+                    <li><strong>VLOOKUP:</strong> <code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></li>
+                    <li><strong>HLOOKUP:</strong> <code>=HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</code></li>
+                    <li>Demonstrate with sample dataset.</li>
+                </ul>
+            </li>
+            <li><strong>Practice Exercise 1:</strong> Use VLOOKUP to find department for employee ID.</li>
+            <li><strong>INDEX() and MATCH() (10 min):</strong>
+                <ul>
+                    <li><strong>INDEX:</strong> <code>=INDEX(array, row_num, [column_num])</code></li>
+                    <li><strong>MATCH:</strong> <code>=MATCH(lookup_value, lookup_array, [match_type])</code></li>
+                    <li>Combine: <code>=INDEX(salary_range, MATCH(employee_name, name_range, 0))</code></li>
+                </ul>
+            </li>
+            <li><strong>Practice Exercise 2:</strong> Use INDEX and MATCH to find a student's score.</li>
+            <li><strong>Wrap-up and Q&amp;A (4 min):</strong> Recap and answer questions.</li>
+            <li><strong>Homework/Extension:</strong> Create a dataset and apply all four functions.</li>
+        </ol>
+        <h4>Summary Table of Functions</h4>
+        <table border="1" cellpadding="4" style="border-collapse:collapse; background:#f9fbe7;">
+            <thead>
+                <tr>
+                    <th>Function</th>
+                    <th>Search Direction</th>
+                    <th>Flexibility</th>
+                    <th>Use Case Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>VLOOKUP()</td>
+                    <td>Vertical</td>
+                    <td>Moderate</td>
+                    <td>Find price based on product ID</td>
+                </tr>
+                <tr>
+                    <td>HLOOKUP()</td>
+                    <td>Horizontal</td>
+                    <td>Moderate</td>
+                    <td>Find data in a row based on header</td>
+                </tr>
+                <tr>
+                    <td>INDEX()</td>
+                    <td>Cell position-based</td>
+                    <td>High</td>
+                    <td>Retrieve data at row/column dynamically</td>
+                </tr>
+                <tr>
+                    <td>MATCH()</td>
+                    <td>Find position</td>
+                    <td>High</td>
+                    <td>Find row/column number of a value</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Sample Dataset for Practice</h4>
+        <table border="1" cellpadding="4" style="margin:1em 0;">
+            <tr>
+                <th>Employee ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Hire Date</th>
+            </tr>
+            <tr><td>101</td><td>Alice</td><td>HR</td><td>55000</td><td>2018-03-15</td></tr>
+            <tr><td>102</td><td>Bob</td><td>IT</td><td>62000</td><td>2017-07-23</td></tr>
+            <tr><td>103</td><td>Charlie</td><td>Finance</td><td>58000</td><td>2019-05-10</td></tr>
+            <tr><td>104</td><td>Diana</td><td>Marketing</td><td>60000</td><td>2020-01-05</td></tr>
+            <tr><td>105</td><td>Evan</td><td>IT</td><td>61000</td><td>2016-11-30</td></tr>
+        </table>
+        <h5>Practice File 1: VLOOKUP() Practice</h5>
+        <ol>
+            <li>Input the above data into Excel cells A1:E6.</li>
+            <li>In G1: "Enter Employee ID:"</li>
+            <li>In G2: input a value (e.g., 102).</li>
+            <li>In H1: "Department:"</li>
+            <li>In H2: <code>=VLOOKUP(G2, A2:E6, 3, FALSE)</code></li>
+            <li>Expected Result: "IT" for Employee ID 102.</li>
+        </ol>
+        <h5>Practice File 2: INDEX() and MATCH() Practice</h5>
+        <ol>
+            <li>In G4: "Enter Employee Name:"</li>
+            <li>In G5: input a name (e.g., "Diana").</li>
+            <li>In H4: "Salary:"</li>
+            <li>In H5: <code>=INDEX(D2:D6, MATCH(G5, B2:B6, 0))</code></li>
+            <li>Expected Result: 60000 for Diana.</li>
+        </ol>
+        <p>
+            <strong>Tips:</strong> Save each practice as a separate sheet. Use cell references to prevent errors. Try modifying input values to see different results.
+        </p>
+
+        <h3>Downloadable Resource</h3>
+        <ul>
+            <li>
+                <a href="static/resources/T4W2_Excel_Formulas_Practice.xlsx" download>
+                    Download Excel Formulas Practice Worksheet (T4W2)
+                </a>
+               
+            </li>
+            <li> <a href="static/resources/Grade12_Graphs_Visuals_Excel.xlsx" download>
+                    Download Graphs & Visuals in Excel Worksheet</li>
+        </ul>
+    </section>
+
+            <h2 id="welcome" style="margin-top: 0;">Welcome, Grade 12 Students!</h2>
+            <p>
+                This page is reserved for Grade 12 Computer Students. 
+            </p>
+            <h3 id="html-lesson">HTML Lesson</h3>
+            <p>
+                <strong>How to run this HTML file using a simple Python web server:</strong>
+            </p>
+            <ol>
+                <li>
+                    Make sure your <code>index.html</code> file is saved in a folder (for example, <code>C:\Users\YourName\MyWebsite</code>).
+                </li>
+                <li>
+                    In the same folder, create a file named <code>server.py</code> with the following content:
+                    <pre><code>import http.server
+import socketserver
+
+PORT = 8000
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print(f"Serving at http://localhost:{PORT}")
+    httpd.serve_forever()
+</code></pre>
+                </li>
+                <li>
+                    Open a terminal or command prompt, navigate to your folder, and run:
+                    <pre><code>python server.py</code></pre>
+                </li>
+                <li>
+                    Open your web browser and go to <a href="http://localhost:8000/Grade12.html" target="_blank">http://localhost:8000/Grade12.html</a>
+                </li>
+            </ol>
+            <p>
+                This will let you view your HTML file locally as a website.
+            </p>
+            <ul>
+                <li><a href="#">Grade 12 Timetable</a></li>
+                <li><a href="#">Exam Schedules</a></li>
+                <li><a href="#">University Application Guide</a></li>
+                <li><a href="#">Study Resources</a></li>
+                <li><a href="#">Counseling & Support</a></li>
+            </ul>
+            <h3 id="upcoming-events">Upcoming Events</h3>
+            <ul>
+                <li>Independence Celebz</li>
+                <li>Mock Exams</li>
+                <li>Exams</li>
+            </ul>
+            <!--  -->  
+            <h3 id="summary">Summary</h3>
+            <ol> <li>You created a folder</li>
+                <li>You created different pages &#40; index.html, about.html, etc &#41; </li>
+                <li>You created a Python script to serve the HTML files</li>
+                <li>You ran the Python script to start a local web server</li>
+                <li>You accessed your HTML files in a web browser using the local server URL</li>
+                <li>You can now view and test your HTML pages as if they were hosted on a real website</li><br><br><br><br>
+
+                <h1> 12.5.2.1; Relate and analyze the specifications of computer components to user requirements and produce graphical products using computer aided programs</h1>
+                    <section>
+                        <h2>Unit 2: Computer Software</h2>
+                        <h3>Benchmark 12.5.2.1</h3>
+                        <p>
+                            <strong>Relate and analyze the specifications of computer components to user requirements and produce graphical products using computer aided programs</strong>
+                        </p>
+                        <h4>Break Down</h4>
+                        <ul>
+                            <li>
+                                <strong>Key Components:</strong>
+                                <ul>
+                                    <li><strong>Specifications of Computer Components:</strong>
+                                        <ul>
+                                            <li>Understanding hardware specifications (CPU, RAM, GPU, storage).</li>
+                                            <li>Knowledge of software compatibility and performance metrics.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>User Requirements:</strong>
+                                        <ul>
+                                            <li>Identifying user needs (gaming, business, graphic design).</li>
+                                            <li>Analyzing how specifications meet or exceed these needs.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Graphical Products:</strong>
+                                        <ul>
+                                            <li>Proficiency in using computer-aided design (CAD) software.</li>
+                                            <li>Skills in creating and modifying graphical representations.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Expectations</h4>
+                        <p>
+                            <strong>What Students Should Learn and Achieve:</strong>
+                            <ul>
+                                <li>Analyze and relate different computer component specifications to various user requirements.</li>
+                                <li>Demonstrate proficiency in producing graphical products using CAD software, ensuring they meet identified specifications and user needs.</li>
+                            </ul>
+                        </p>
+                        <h4>Learning Targets</h4>
+                        <ul>
+                            <li>
+                                <strong>Specifications of Computer Components:</strong>
+                                <br>
+                                Target: Analyze and compare at least three different CPU and GPU specifications based on user requirements for performance.
+                            </li>
+                            <li>
+                                <strong>User Requirements:</strong>
+                                <br>
+                                Target: Develop a user profile and justify component selection based on specific needs, detailing at least three variables (e.g., budget, performance, application).
+                            </li>
+                            <li>
+                                <strong>Graphical Products:</strong>
+                                <br>
+                                Target: Create a detailed graphical product using CAD software that reflects user needs and incorporates specified components.
+                            </li>
+                        </ul>
+                        <h4>Instruction and Assessment Strategies</h4>
+                        <ul>
+                            <li>
+                                <strong>Teaching Methods:</strong>
+                                <ul>
+                                    <li>Lectures/Discussions: Cover hardware specifications and user requirements.</li>
+                                    <li>Hands-On Activities: Students will assemble a mock computer build based on user profiles.</li>
+                                    <li>CAD Workshops: Guided sessions where students learn to use CAD software effectively.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Assessment:</strong>
+                                <ul>
+                                    <li>Project: Students submit a report analyzing a specific user’s needs and recommending a computer build.</li>
+                                    <li>Presentation: Students present their findings and computer build recommendations to the class.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h4>Terms and Definition</h4>
+                        <p>
+                            <strong>CAD</strong> - In information technology, CAD stands for Computer-Aided Design. It refers to the use of computer software to create, modify, analyze, and optimize designs. CAD is widely used in various fields such as architecture, engineering, product design, and manufacturing to develop precise drawings, 3D models, and simulations. It helps improve accuracy, efficiency, and collaboration in the design process.
+                        </p>
+                        <h4>Summarize</h4>
+                        <p>
+                            This standard emphasizes the connection between computer component specifications and user requirements, along with the ability to produce graphical products using CAD software. Students are expected to analyze specifications, justify component choices based on user needs, and demonstrate proficiency in graphical design. The curriculum will engage students through a mix of lectures, hands-on activities, and practical assessments to ensure they meet these learning targets.
+                        </p>
+                    </section>
+                
+                <li>
+                <strong>Part A: Basic Specifications</strong>
+                <ul>
+                    <li>Identify the Processor Type: CPU or GPU?</li>
+                    <li>Core Count / Stream Processors: How many cores or stream processors are there?</li>
+                    <li>Clock Speed: What is the base clock speed (in GHz)?</li>
+                    <li>Memory Type &amp; Size: What type of memory does it use? (e.g., DDR4, GDDR6). How much memory is available? (e.g., 8GB, 12GB)</li>
+                    <li>Power Consumption: What is the TDP (Thermal Design Power)?</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Part B: Intermediate Specifications</strong>
+                <ul>
+                    <li>Architecture: What is the processor’s architecture? (e.g., Intel’s Alder Lake, AMD Ryzen)</li>
+                    <li>Performance Benchmarks: Are there any benchmark scores provided? (e.g., PassMark, 3DMark)</li>
+                    <li>Additional Features: Supports specific technologies? (e.g., ray tracing, DLSS, hyper-threading)</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Part C: Advanced Comparison</strong>
+                <ul>
+                    <li>Performance-to-Watt Ratio: How efficient is each processor?</li>
+                    <li>Intended Use Cases: Gaming, professional rendering, scientific computing?</li>
+                    <li>Compatibility: Is the processor compatible with certain motherboards or systems?</li>
+                    <li>Price and Value: Based on specs, what is the approximate value?</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Step 4: Analysis &amp; Discussion</strong>
+                <ul>
+                    <li>Compare your group's CPU and GPU specs.</li>
+                    <li>Which has higher clock speeds? Why might that matter?</li>
+                    <li>Which has more cores or stream processors? How does that affect multitasking or parallel processing?</li>
+                    <li>How do memory types and sizes influence performance?</li>
+                    <li>What features are most relevant for specific tasks?</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Step 5: Monitoring &amp; Assistance</strong>
+                <ul>
+                    <li>Walk around, ask probing questions:</li>
+                    <ul>
+                        <li>Why do higher core counts benefit certain applications?</li>
+                        <li>How do different architectures influence performance?</li>
+                        <li>Can two processors have similar specs but perform differently? Why?</li>
+                    </ul>
+                    <li>Optional: Gradually Introduce Complexity</li>
+                    <ul>
+                        <li>Start with basic specs, then add details like cache sizes, PCIe versions, or overclocking features.</li>
+                        <li>Encourage groups to research real-world performance comparisons.</li>
+                    </ul>
+                </ul>
+            </li>
+
+            
+            </ol>
+            <h3 id="cpu-comparisons">CPU Comparisons</h3>
+            <p>
+                Below are three popular CPUs and GPUs, compared based on typical user performance requirements such as gaming, content creation, and professional workloads.
+            </p>
+            <h4>CPU Comparisons</h4>
+            <table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; background:#f9f6f2;">
+                <thead style="background:#ffe5c7;">
+                    <tr>
+                        <th>Model</th>
+                        <th>Intel Core i9-13th Gen<br>(e.g., i9-13900K)</th>
+                        <th>AMD Ryzen 9 7950X</th>
+                        <th>Intel Core i7-12700K</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Architecture</strong></td>
+                        <td>Raptor Lake</td>
+                        <td>Zen 4</td>
+                        <td>Alder Lake</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cores / Threads</strong></td>
+                        <td>24 (8P + 16E) / 32 threads</td>
+                        <td>16 / 32 threads</td>
+                        <td>12 (8P + 4E) / 20 threads</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Base Clock</strong></td>
+                        <td>3.0 GHz (P-core)</td>
+                        <td>4.5 GHz</td>
+                        <td>3.6 GHz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Boost Clock</strong></td>
+                        <td>Up to 5.8 GHz</td>
+                        <td>Up to 5.7 GHz</td>
+                        <td>Up to 5.0 GHz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Cache</strong></td>
+                        <td>36MB L3</td>
+                        <td>64MB L3</td>
+                        <td>25MB L3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Performance Focus</strong></td>
+                        <td>High-end gaming &amp; content creation</td>
+                        <td>Extreme gaming &amp; multi-threaded workloads</td>
+                        <td>High-performance gaming &amp; productivity</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><strong>Gaming:</strong> i7-12700K offers excellent performance at a lower cost.</li>
+                <li><strong>Content Creation &amp; Heavy Multithreading:</strong> Ryzen 9 7950X or i9-13900K excel due to higher core counts.</li>
+                <li><strong>Professional Workstations:</strong> i9-13900K provides top-tier performance.</li>
+            </ul>
+
+            <h4>GPU Comparisons</h4>
+            <table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; background:#f9f6f2;">
+                <thead style="background:#ffe5c7;">
+                    <tr>
+                        <th>Model</th>
+                        <th>NVIDIA GeForce RTX 4090</th>
+                        <th>AMD Radeon RX 7900 XTX</th>
+                        <th>NVIDIA GeForce RTX 3080 Ti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Architecture</strong></td>
+                        <td>Ada Lovelace</td>
+                        <td>RDNA 3</td>
+                        <td>Ampere</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VRAM</strong></td>
+                        <td>24GB GDDR6X</td>
+                        <td>24GB GDDR6</td>
+                        <td>12GB GDDR6X</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CUDA Cores / Stream Processors</strong></td>
+                        <td>16,384 CUDA cores</td>
+                        <td>6,144 Stream Processors</td>
+                        <td>10,240 CUDA cores</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ray Tracing &amp; DLSS</strong></td>
+                        <td>Yes, advanced RT cores &amp; DLSS 3</td>
+                        <td>Yes, supports FidelityFX Super Resolution</td>
+                        <td>Yes, DLSS 2</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Power Consumption</strong></td>
+                        <td>Approx. 450W</td>
+                        <td>Approx. 355W</td>
+                        <td>Approx. 350W</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><strong>High-End Gaming &amp; Creative Work:</strong> RTX 4090 provides unmatched performance for 4K gaming, rendering, and AI workloads.</li>
+                <li><strong>Cost-Effective &amp; High Performance:</strong> RX 7900 XTX offers excellent performance at a lower price point but with slightly less ray tracing capability.</li>
+                <li><strong>Previous Gen &amp; Budget:</strong> RTX 3080 Ti still performs well for gaming and creative tasks but may be less future-proof.</li>
+            </ul>
+
+            <h4>Summary &amp; User Fit</h4>
+            <table border="1" cellpadding="6" style="border-collapse:collapse; width:100%; background:#f9f6f2;">
+                <thead style="background:#ffe5c7;">
+                    <tr>
+                        <th>User Type</th>
+                        <th>Recommended CPU</th>
+                        <th>Recommended GPU</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Casual Gaming</td>
+                        <td>Intel Core i7-12700K</td>
+                        <td>AMD Radeon RX 7900 XTX or RTX 3080 Ti</td>
+                    </tr>
+                    <tr>
+                        <td>Enthusiast Gaming &amp; Streaming</td>
+                        <td>Intel Core i9-13900K</td>
+                        <td>NVIDIA RTX 4090</td>
+                    </tr>
+                    <tr>
+                        <td>Content Creation &amp; Professional Work</td>
+                        <td>AMD Ryzen 9 7950X</td>
+                        <td>NVIDIA RTX 4090 / RTX 4080</td>
+                    </tr>
+                    <tr>
+                        <td>Budget-Conscious High Performance</td>
+                        <td>Intel Core i7-12700K</td>
+                        <td>AMD Radeon RX 7900 XTX</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul>
+                <li><strong>Balance is key:</strong> Pairing a high-end CPU with a matching GPU ensures balanced performance.</li>
+                <li><strong>Future-proofing:</strong> Investing in the latest generation often provides longer relevance.</li>
+                <li><strong>User needs:</strong> For gaming, GPU is often the bottleneck; for content creation, CPU and GPU both matter.</li>
+            </ul>
+            <div id="exercise" style="background: #fffbe9; border: 2px solid #ffe5c7; border-radius: 10px; padding: 1.5em; margin: 2em 0; box-shadow: 0 2px 8px rgba(214,90,41,0.08);">
+            <h2>Exercise: Computer Hardware Planning Task</h2>
+            <p>
+                <strong>Scenario:</strong> Imagine you are designing computers for three different users: a <strong>Gamer</strong>, a <strong>Scientist</strong>, and a <strong>Student</strong>. For each user, choose the most appropriate components based on their needs.
+            </p>
+            <ul>
+                <li>CPU (Processor)</li>
+                <li>GPU (Graphics Card)</li>
+                <li>Local Drive (Hard Drive or SSD)</li>
+                <li>Cache</li>
+                <li>RAM (Memory)</li>
+            </ul>
+            <p>
+                <strong>Your Task:</strong><br>
+                For each user, suggest the most suitable CPU, GPU, Local Drive, Cache, and RAM. Justify your choices with a brief explanation of why these components are suitable for that user.
+            </p>
+            <p>
+                <strong>Example Format:</strong>
+                <pre style="background:#f4f4f4; padding:1em; border-radius:6px;">
+      User: Gamer
+
+      CPU:
+      GPU:
+      Local Drive:
+      Cache:
+      RAM:
+    <div style="background: #fffbe9; border: 2px solid #ffe5c7; border-radius: 10px; padding: 1.5em; margin: 2em 0; box-shadow: 0 2px 8px rgba(214,90,41,0.08);">
+      (Provide your choices and explain briefly why they are suitable for a gamer.)
+    </div>
+    </pre>
+    </p>
+    <p>
+      <strong>Hints:</strong>
+      <ul>
+        <li>Gamers need powerful graphics and fast processing speeds.</li>
+        <li>Scientists often work with large data sets, simulations, or complex calculations.</li>
+        <li>Students need a balanced system for studying, browsing, and light multitasking.</li>
+      </ul>
+    </p>
+    </div>
+
+  
+
+    <section id="models-simulations-lesson" style="background: #f8f5ff; border: 2px solid #d1c4e9; border-radius: 10px; padding: 2em; margin: 2em 0;">
+        <h2>Content Standard: 5.2</h2>
+        <p>
+            <strong>Investigate and analyse computer system and application software, programming, algorithm, web design and databases, and develop and apply the skills and knowledge in the various software</strong>
+        </p>
+        <h3>Benchmark: 12.5.1.1</h3>
+        <p>
+            <strong>Identify different types of models used for simulations</strong>
+        </p>
+        <h4>Overview</h4>
+        <ol>
+            <li>Introduction to Models and Simulation</li>
+            <li>Types of Mathematical Model</li>
+            <li>Physical Models</li>
+            <li>Computer Model vs. Virtual Simulations</li>
+            <li>Conceptual and Logical Models</li>
+            <li>Comparing different types of model</li>
+        </ol>
+        <hr>
+        <h3>Section A: Introduction to Models and Simulation</h3>
+        <h4>Lesson 1: Models and Simulations</h4>
+        <p>
+            <strong>Reason for learning:</strong><br>
+            Understanding models and simulations is essential because they allow us to analyze, predict, and understand complex systems and processes without the need for real-world experimentation. This knowledge is fundamental in engineering, science, and technology, helping to design better products, systems, and solutions efficiently and safely.
+        </p>
+        <p>
+            <strong>Objectives:</strong>
+            <ul>
+                <li>Define what a model and a simulation are.</li>
+                <li>Explain the purpose and application of models and simulations.</li>
+            </ul>
+        </p>
+        <h5>Questions</h5>
+        <ol>
+            <li>What is a model?</li>
+            <li>What is a simulation?</li>
+            <li>What are the types of models and simulations?</li>
+            <li>What is the purpose of models and simulations?</li>
+            <li>What are some examples of models and simulations?</li>
+        </ol>
+        <h5>Key Concepts</h5>
+        <ul>
+            <li><strong>What is a model?</strong> A simplified representation of a real-world object, system, or process. This can be physical (e.g., a scale model), mathematical (equations and algorithms), or graphical (diagrams).</li>
+            <li><strong>What is Simulation?</strong>
+                <ul>
+                    <li>The process of using a model to imitate the behavior of a real-world system over time.</li>
+                    <li>Typically involves computer software to run the model and observe outcomes.</li>
+                </ul>
+            </li>
+            <li><strong>Types of models and simulations:</strong>
+                <ul>
+                    <li>Physical models: Scale models of buildings, vehicles, or electronic circuits.</li>
+                    <li>Mathematical models: Equations describing system behavior, such as electrical circuits or population growth.</li>
+                    <li>Computer simulations: Virtual environment where models are run to analyze system performance.</li>
+                </ul>
+            </li>
+            <li><strong>Purpose of models and simulation:</strong>
+                <ul>
+                    <li>To test ideas and hypotheses without physical prototypes.</li>
+                    <li>To predict system behavior under different conditions.</li>
+                    <li>To optimize design and improve efficiency.</li>
+                    <li>To train personnel in a safe environment.</li>
+                    <li>To analyze complex systems that are difficult to study directly.</li>
+                </ul>
+            </li>
+            <li><strong>Examples:</strong>
+                <ul>
+                    <li>Engineering design (e.g., stress analysis of structures).</li>
+                    <li>Electronics (circuit simulations).</li>
+                    <li>Flight training (flight simulators).</li>
+                    <li>Environmental science (climate modeling).</li>
+                    <li>Business processes (financial modeling).</li>
+                </ul>
+            </li>
+        </ul>
+        <h5>Activity 1.0</h5>
+        <ol>
+            <li>Identify examples of models and simulations you encountered (personal experience or through media).<br>
+                <em>What was it used for?</em>
+            </li>
+            <li>
+                In pairs or small groups, discuss:
+                <ul>
+                    <li>How are a model and a simulation similar?</li>
+                    <li>How are they different?</li>
+                    <li>Can a model exist without a simulation?</li>
+                    <li>Can a simulation exist without a model?</li>
+                </ul>
+            </li>
+        </ol>
+        <h5>Discussion Points</h5>
+        <table border="1" cellpadding="6" style="border-collapse:collapse; background:#f3e5f5;">
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Model</th>
+                    <th>Simulation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Definition</td>
+                    <td>Simplified representation of a system</td>
+                    <td>Process of using a model to imitate system behavior</td>
+                </tr>
+                <tr>
+                    <td>Purpose</td>
+                    <td>To understand or analyze a system</td>
+                    <td>To observe how a system behaves over time</td>
+                </tr>
+                <tr>
+                    <td>Physical or digital?</td>
+                    <td>Can be physical, mathematical, or graphical</td>
+                    <td>Typically digital/computer-based</td>
+                </tr>
+                <tr>
+                    <td>Dependency</td>
+                    <td>Can exist independently of a simulation</td>
+                    <td>Depends on a model to function</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <strong>Use these words to fill in overlapping and unique features:</strong><br>
+            Physical, Diagrams, Blueprints, Simplify reality, Uses computer, Help analyze or predict, Used in engineering and science, Virtual experiments
+        </p>
+        <h5>Section Summary</h5>
+        <ul>
+            <li>Models are simplified representations of real-world systems (e.g., physical models, diagrams, equations).</li>
+            <li>Simulations use models to imitate real-world processes over time, usually via computer software.</li>
+            <li>Both are used to analyze, predict, and understand complex systems safely and efficiently.</li>
+            <li>Types include physical models, mathematical models, and computer simulations.</li>
+            <li>They help test ideas, train users, and optimize designs without needing real-world experimentation.</li>
+            <li>Common examples: flight simulators, climate models, circuit simulations, and financial modeling.</li>
+            <li>A simulation depends on a model, but a model can exist without a simulation.</li>
+        </ul>
+        <hr>
+        <h3>Section B: Types of Mathematical Models</h3>
+        <h4>Lesson 2: Mathematical Models in Simulations</h4>
+        <p>
+            <strong>Reason for Learning:</strong><br>
+            Mathematical models are essential for representing real-world systems using equations, logic, and data. They help simulate and predict system behaviors in areas like physics, finance, biology, and computing. Learning about different types of mathematical models enables students to apply these tools in problem-solving, design, and simulation scenarios across science, technology, and engineering fields.
+        </p>
+        <p>
+            <strong>Objectives:</strong>
+            <ul>
+                <li>Define what a mathematical model is.</li>
+                <li>Identify and describe different types of mathematical models.</li>
+                <li>Explain how mathematical models are used in simulations.</li>
+                <li>Provide examples of mathematical models in real-world applications.</li>
+            </ul>
+        </p>
+        <h5>Questions</h5>
+        <ol>
+            <li>What is a mathematical model?</li>
+            <li>What are the types of mathematical models?</li>
+            <li>How are mathematical models used in simulations?</li>
+            <li>Why are mathematical models important?</li>
+            <li>What are real-life examples of mathematical models?</li>
+        </ol>
+        <h5>Types of Mathematical Models</h5>
+        <ul>
+            <li><strong>Linear Models:</strong> Use linear equations (e.g., interest calculation).</li>
+            <li><strong>Nonlinear Models:</strong> Complex behaviors (e.g., population growth).</li>
+            <li><strong>Statistical Models:</strong> Use data/probability (e.g., weather prediction).</li>
+            <li><strong>Algorithmic Models:</strong> Step-by-step logic (e.g., sorting algorithms).</li>
+            <li><strong>Differential Models:</strong> Use calculus to model change over time (e.g., heat transfer).</li>
+        </ul>
+        <h5>Activity 2.0</h5>
+        <ol>
+            <li>Identify a real-life system that could use a mathematical model.
+                <ul>
+                    <li>What type of model would fit?</li>
+                    <li>What variables are involved?</li>
+                </ul>
+            </li>
+            <li>
+                Group Discussion:
+                <ul>
+                    <li>Why use a mathematical model instead of a physical model?</li>
+                    <li>Choose a model type for different scenarios (fuel efficiency, test scores, climate change).</li>
+                    <li>Advantages of running mathematical models on a computer?</li>
+                </ul>
+            </li>
+        </ol>
+        <h5>Discussion Summary</h5>
+        <table border="1" cellpadding="6" style="border-collapse:collapse; background:#f3e5f5;">
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Mathematical Model</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Definition</td>
+                    <td>Uses math to describe systems</td>
+                </tr>
+                <tr>
+                    <td>Purpose</td>
+                    <td>Predict, simulate, understand behavior</td>
+                </tr>
+                <tr>
+                    <td>Medium</td>
+                    <td>Often computer-based</td>
+                </tr>
+                <tr>
+                    <td>Usefulness</td>
+                    <td>Cost-effective, precise, adaptable</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>Section Summary</h5>
+        <ul>
+            <li>Mathematical models describe systems using math.</li>
+            <li>Types: linear, nonlinear, statistical, algorithmic, differential.</li>
+            <li>Used for predicting and simulating real-world systems.</li>
+            <li>Common in science, engineering, computing, and finance.</li>
+            <li>Often run on computers for speed and accuracy.</li>
+
+
+        </ul>
+        <h3> Downloads</h3>
+        <ul>
+            <li><a href="static/resources/T3W6_12.5.1.1_Models Used for Simulations.docx"> Download the lesson now </a></li>
+        <h3> Download Test of Objectives for Section A</h3>
+        <li><a href="static/resources/T3W6_12.5.1.1_Test_of_Objectives.docx">Download here</a></li>
+        <li><a href="static/resources/T3W6_12.5.1.1_A_Test_of_Objectives (2).docx">Download your test 1</a></li>
+        <li><a href="static/resources/T3W6_12.5.1.1_B_Test of Objectives.docx">Download test 2</a></li>
+        
+        <h2>Wednesday's Lesson. Week 7</h2>
+        <li><a href="static/resources/T3W7_12.5.1.1 _SecC_Physical Models and Computer Models vs.docx" Download>Download the lesson now.</a></li>
+    
+    </ul>
+        
+        
+    </section>
+    <!-- Test: Grade 12 Computer Technology – Test of Objectives -->
+    <button id="show-test-btn" style="display:block; margin:2em auto; padding:1em 2em; background:#8b5309; color:#fff; border:none; border-radius:8px; font-size:1.1em; font-weight:bold; cursor:pointer;">
+        Show Grade 12 Computer Technology Test
+    </button>
+    <button id="hide-test-btn" style="display:none; margin:2em auto; padding:1em 2em; background:#d65a29; color:#fff; border:none; border-radius:8px; font-size:1.1em; font-weight:bold; cursor:pointer;">
+        Hide Grade 12 Computer Technology Test
+    </button>
+    <div id="grade12-test" style="display:none; background:#fffbe9; border:2px solid #ffe5c7; border-radius:10px; padding:2em; margin:2em 0; box-shadow:0 2px 8px rgba(214,90,41,0.08); max-width:800px; margin-left:auto; margin-right:auto;">
+        <h2>Grade 12 Computer Technology – Test of Objectives</h2>
+        <p><strong>Content Standard 5.2:</strong> Investigate and analyse computer system and application software, programming, algorithm, web design and databases</p>
+        <p><strong>Benchmark 12.5.1.1:</strong> Identify different types of models used for simulations</p>
+        <h3>Lesson 1: Models and Simulations</h3>
+        <h4>Part A: Multiple Choice (1 mark each)</h4>
+        <p>Choose the correct answer and circle the letter.</p>
+        <ol>
+            <form id="mcq-form">
+                <ol>
+                    <li>
+                        What is a model in the context of simulations?<br>
+                        <label><input type="radio" name="q1" value="A"> A. A type of computer program</label><br>
+                        <label><input type="radio" name="q1" value="B"> B. A simplified representation of a real-world system</label><br>
+                        <label><input type="radio" name="q1" value="C"> C. A blueprint for designing machines</label><br>
+                        <label><input type="radio" name="q1" value="D"> D. A piece of hardware used in computers</label>
+                        <span class="mcq-feedback" id="feedback-q1"></span>
+                    </li>
+                    <li>
+                        What is the purpose of a simulation?<br>
+                        <label><input type="radio" name="q2" value="A"> A. To display animations for learning</label><br>
+                        <label><input type="radio" name="q2" value="B"> B. To build physical replicas of systems</label><br>
+                        <label><input type="radio" name="q2" value="C"> C. To imitate system behavior over time using models</label><br>
+                        <label><input type="radio" name="q2" value="D"> D. To calculate costs of a product</label>
+                        <span class="mcq-feedback" id="feedback-q2"></span>
+                    </li>
+                    <li>
+                        Which of the following is an example of a physical model?<br>
+                        <label><input type="radio" name="q3" value="A"> A. Flight simulator</label><br>
+                        <label><input type="radio" name="q3" value="B"> B. Spreadsheet calculation</label><br>
+                        <label><input type="radio" name="q3" value="C"> C. Circuit diagram</label><br>
+                        <label><input type="radio" name="q3" value="D"> D. Scale model of a building</label>
+                        <span class="mcq-feedback" id="feedback-q3"></span>
+                    </li>
+                    <li>
+                        Which of the following is not true about simulations?<br>
+                        <label><input type="radio" name="q4" value="A"> A. They are always physical</label><br>
+                        <label><input type="radio" name="q4" value="B"> B. They are used to predict behavior</label><br>
+                        <label><input type="radio" name="q4" value="C"> C. They require a model to function</label><br>
+                        <label><input type="radio" name="q4" value="D"> D. They are often run on computers</label>
+                        <span class="mcq-feedback" id="feedback-q4"></span>
+                    </li>
+                    <li>
+                        What do models and simulations have in common?<br>
+                        <label><input type="radio" name="q5" value="A"> A. Both are always physical</label><br>
+                        <label><input type="radio" name="q5" value="B"> B. Both simplify reality to help analyze or predict systems</label><br>
+                        <label><input type="radio" name="q5" value="C"> C. Both require programming skills</label><br>
+                        <label><input type="radio" name="q5" value="D"> D. Both are only used in education</label>
+                        <span class="mcq-feedback" id="feedback-q5"></span>
+                    </li>
+                </ol>
+                <button type="button" id="submit-mcq" style="margin:1em 0; padding:0.5em 1.5em; background:#8b5309; color:#fff; border:none; border-radius:6px; font-size:1em; font-weight:bold; cursor:pointer;">
+                    Submit Answers
+                </button>
+            </form>
+            <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+            <script>
+                // Supabase config (replace with your own keys)
+                const SUPABASE_URL = 'https://your-project.supabase.co';
+                const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhnemJnYWRiZGhyd3hncHRkbnJnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ3NDY5MDIsImV4cCI6MjA3MDMyMjkwMn0.a_qUF2MdeGpwoan2UFf4tThMB_6fruvBvar1TlmgtHQ';
+                const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+                // MCQ grading
+                document.getElementById('submit-mcq').addEventListener('click', async function() {
+                    const answers = {
+                        q1: 'B',
+                        q2: 'C',
+                        q3: 'D',
+                        q4: 'A',
+                        q5: 'B'
+                    };
+                    let allAnswered = true;
+                    let score = 0;
+                    for (let i = 1; i <= 5; i++) {
+                        const radios = document.getElementsByName('q' + i);
+                        let selected = '';
+                        for (const radio of radios) {
+                            if (radio.checked) selected = radio.value;
+                        }
+                        const feedback = document.getElementById('feedback-q' + i);
+                        if (!selected) {
+                            feedback.innerHTML = '<span style="color:#d65a29;">Please select an answer.</span>';
+                            allAnswered = false;
+                        } else if (selected === answers['q' + i]) {
+                            feedback.innerHTML = '<span style="color:green; font-weight:bold;">Correct!</span>';
+                            score++;
+                        } else {
+                            feedback.innerHTML = '<span style="color:#d65a29; font-weight:bold;">Incorrect.</span> <span style="color:#555;">Correct answer: ' + answers['q' + i] + '</span>';
+                        }
+                    }
+                    if (allAnswered) {
+                        this.disabled = true;
+                        this.style.background = '#ccc';
+                        this.innerText = 'Submitted';
+                        document.getElementById('mcq-score').innerHTML = `<strong>MCQ Score: ${score}/5</strong>`;
+                        // Save MCQ result to Supabase (optional)
+                        // await supabase.from('grade12_mcq').insert([{score: score, timestamp: new Date().toISOString()}]);
+                    }
+                });
+            </script>
+            <div id="mcq-score" style="margin:1em 0; font-size:1.1em;"></div>
+           
+            <script>
+                // OpenAI API config (replace with your own key)
+                const OPENAI_API_KEY = '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';
+
+                // MCQ questions and correct answers
+                const mcqQuestions = [
+                    {
+                        question: "What is a model in the context of simulations?",
+                        correct: "B"
+                    },
+                    {
+                        question: "What is the purpose of a simulation?",
+                        correct: "C"
+                    },
+                    {
+                        question: "Which of the following is an example of a physical model?",
+                        correct: "D"
+                    },
+                    {
+                        question: "Which of the following is not true about simulations?",
+                        correct: "A"
+                    },
+                    {
+                        question: "What do models and simulations have in common?",
+                        correct: "B"
+                    }
+                ];
+
+                // Helper to get the selected value for a question
+                function getSelectedValue(name) {
+                    const radios = document.getElementsByName(name);
+                    for (const radio of radios) {
+                        if (radio.checked) return radio.value;
+                    }
+                    return "";
+                }
+
+                // Helper to highlight answers
+                function highlightAnswer(qIdx, selected, correct, explanation) {
+                    const feedback = document.getElementById('feedback-q' + (qIdx + 1));
+                    const radios = document.getElementsByName('q' + (qIdx + 1));
+                    for (const radio of radios) {
+                        const label = radio.parentElement;
+                        label.style.fontWeight = "normal";
+                        label.style.background = "";
+                        label.style.color = "";
+                        if (radio.value === correct) {
+                            label.style.background = "#d4edda";
+                            label.style.color = "#155724";
+                            label.style.fontWeight = "bold";
+                        }
+                        if (radio.checked && radio.value !== correct) {
+                            label.style.background = "#f8d7da";
+                            label.style.color = "#721c24";
+                        }
+                    }
+                    if (selected === correct) {
+                        feedback.innerHTML = `<span style="color:green; font-weight:bold;">Correct!</span> <br><span style="color:#155724;">${explanation}</span>`;
+                    } else if (selected) {
+                        feedback.innerHTML = `<span style="color:#d65a29; font-weight:bold;">Incorrect.</span> <br>
+                            <span style="color:#155724;">Correct answer: ${correct}</span><br>
+                            <span style="color:#155724;">${explanation}</span>`;
+                    } else {
+                        feedback.innerHTML = `<span style="color:#d65a29;">Please select an answer.</span>`;
+                    }
+                }
+
+                // Function to get AI explanation for each question
+                async function getAIExplanation(question, correctLetter) {
+                    const prompt = `For the following multiple choice question, explain why the correct answer is "${correctLetter}". Question: "${question}"`;
+                    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer ${OPENAI_API_KEY}`
+                        },
+                        body: JSON.stringify({
+                            model: "gpt-3.5-turbo",
+                            messages: [{role: "user", content: prompt}],
+                            max_tokens: 80,
+                            temperature: 0.2
+                        })
+                    });
+                    const data = await response.json();
+                    return data.choices && data.choices[0] ? data.choices[0].message.content : "No explanation available.";
+                }
+
+                document.getElementById('submit-mcq').addEventListener('click', async function() {
+                    let allAnswered = true;
+                    let score = 0;
+                    // Disable button to prevent double submission
+                    this.disabled = true;
+                    this.style.background = '#ccc';
+                    this.innerText = 'Grading...';
+
+                    // For each question, grade and get AI explanation
+                    for (let i = 0; i < mcqQuestions.length; i++) {
+                        const selected = getSelectedValue('q' + (i + 1));
+                        const correct = mcqQuestions[i].correct;
+                        if (!selected) allAnswered = false;
+                        if (selected === correct) score++;
+                        // Get AI explanation for this question
+                        const explanation = await getAIExplanation(mcqQuestions[i].question, correct);
+                        highlightAnswer(i, selected, correct, explanation);
+                    }
+                    if (allAnswered) {
+                        document.getElementById('mcq-score').innerHTML = `<strong>MCQ Score: ${score}/5</strong>`;
+                        this.innerText = 'Submitted';
+                    } else {
+                        this.innerText = 'Please answer all questions';
+                    }
+                    // Disable all radio buttons after submission
+                    for (let i = 1; i <= mcqQuestions.length; i++) {
+                        const radios = document.getElementsByName('q' + i);
+                        for (const radio of radios) {
+                            radio.disabled = true;
+                        }
+                    }
+                });
+
+                // --- Matching Section with AI explanations ---
+                const matchingQuestions = [
+                    {
+                        left: "Engineering design",
+                        right: "C. Stress analysis model",
+                        correct: "C"
+                    },
+                    {
+                        left: "Electronics",
+                        right: "A. Circuit simulation",
+                        correct: "A"
+                    },
+                    {
+                        left: "Environmental science",
+                        right: "B. Climate modeling",
+                        correct: "B"
+                    },
+                    {
+                        left: "Business",
+                        right: "D. Financial modeling",
+                        correct: "D"
+                    }
+                ];
+
+                async function getMatchingExplanation(left, right) {
+                    const prompt = `Explain why "${right}" is the correct match for "${left}" in a matching exercise.`;
+                    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer ${OPENAI_API_KEY}`
+                        },
+                        body: JSON.stringify({
+                            model: "gpt-3.5-turbo",
+                            messages: [{role: "user", content: prompt}],
+                            max_tokens: 60,
+                            temperature: 0.2
+                        })
+                    });
+                    const data = await response.json();
+                    return data.choices && data.choices[0] ? data.choices[0].message.content : "No explanation available.";
+                }
+
+                document.getElementById('submit-matching').addEventListener('click', async function() {
+                    const correct = {match11: 'C', match12: 'A', match13: 'B', match14: 'D'};
+                    let score = 0;
+                    for (let i = 11; i <= 14; i++) {
+                        const val = document.querySelector(`[name=match${i}]`).value.trim().toUpperCase();
+                        const feedbackId = `matching-feedback-${i}`;
+                        let feedbackEl = document.getElementById(feedbackId);
+                        if (!feedbackEl) {
+                            feedbackEl = document.createElement('span');
+                            feedbackEl.id = feedbackId;
+                            document.querySelector(`[name=match${i}]`).parentElement.appendChild(feedbackEl);
+                        }
+                        const qIdx = i - 11;
+                        const explanation = await getMatchingExplanation(matchingQuestions[qIdx].left, matchingQuestions[qIdx].right);
+                        if (val === correct['match' + i]) {
+                            score++;
+                            feedbackEl.innerHTML = `<span style="color:green; font-weight:bold;">Correct!</span><br><span style="color:#155724;">${explanation}</span>`;
+                        } else {
+                            feedbackEl.innerHTML = `<span style="color:#d65a29; font-weight:bold;">Incorrect.</span> <span style="color:#555;">Correct: ${correct['match' + i]}</span><br><span style="color:#155724;">${explanation}</span>`;
+                        }
+                    }
+                    document.getElementById('matching-score').innerHTML = `<strong>Matching Score: ${score}/4</strong>`;
+                    this.disabled = true;
+                    this.style.background = '#ccc';
+                    this.innerText = 'Submitted';
+                });
+
+                // --- Discussion Section (AI feedback even if blank) ---
+                async function getModelDiscussionAnswer(question) {
+                    // Ask AI for a model answer if student leaves blank
+                    const prompt = `Provide a model answer for the following question (3 marks): "${question}"`;
+                    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer ${OPENAI_API_KEY}`
+                        },
+                        body: JSON.stringify({
+                            model: "gpt-3.5-turbo",
+                            messages: [{role: "user", content: prompt}],
+                            max_tokens: 80,
+                            temperature: 0.2
+                        })
+                    });
+                    const data = await response.json();
+                    return data.choices && data.choices[0] ? data.choices[0].message.content : "No feedback.";
+                }
+
+                async function gradeDiscussion(question, answer) {
+                    if (!answer) {
+                        // If blank, return model answer
+                        const modelAns = await getModelDiscussionAnswer(question);
+                        return `<span style="color:#d65a29;">No answer provided. Model answer:</span><br><span style="color:#155724;">${modelAns}</span>`;
+                    }
+                    const prompt = `Grade the following student answer for the question: "${question}". Give feedback and a mark out of 3. Student answer: "${answer}"`;
+                    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer ${OPENAI_API_KEY}`
+                        },
+                        body: JSON.stringify({
+                            model: "gpt-3.5-turbo",
+                            messages: [{role: "user", content: prompt}],
+                            max_tokens: 80,
+                            temperature: 0.2
+                        })
+                    });
+                    const data = await response.json();
+                    return data.choices && data.choices[0] ? data.choices[0].message.content : "No feedback.";
+                }
+
+                document.getElementById('submit-discussion').addEventListener('click', async function() {
+                    const questions = [
+                        "Can a simulation exist without a model? Explain.",
+                        "Can a model exist without a simulation? Give an example.",
+                        "Think of a model or simulation you’ve seen in the media. What was it used for?"
+                    ];
+                    let total = 0;
+                    for (let i = 15; i <= 17; i++) {
+                        const answer = document.querySelector(`[name=disc${i}]`).value.trim();
+                        const feedbackEl = document.getElementById('feedback-disc' + i);
+                        feedbackEl.innerHTML = '<span style="color:#888;">Checking...</span>';
+                        const feedback = await gradeDiscussion(questions[i - 15], answer);
+                        feedbackEl.innerHTML = feedback;
+                        const markMatch = feedback.match(/([0-3])\s*\/\s*3/);
+                        if (markMatch) total += parseInt(markMatch[1]);
+                    }
+                    document.getElementById('discussion-score').innerHTML = `<strong>Discussion Score: ${total}/9</strong>`;
+                    this.disabled = true;
+                    this.style.background = '#ccc';
+                    this.innerText = 'Submitted';
+                });
+            </script>
+            <h4>Part C: Matching (1 mark each)</h4>
+            <form id="matching-form">
+                <p>Match each item in Column A with its correct match in Column B. Write the letter of the correct match.</p>
+                <table border="1" cellpadding="6" style="border-collapse:collapse; background:#f9f6f2; margin-bottom:1em;">
+                    <thead style="background:#ffe5c7;">
+                        <tr>
+                            <th>Column A</th>
+                            <th>Column B</th>
+                            <th>Your Answer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>11. Engineering design</td>
+                            <td>A. Circuit simulation</td>
+                            <td><input type="text" name="match11" maxlength="1" style="width:2em;"></td>
+                        </tr>
+                        <tr>
+                            <td>12. Electronics</td>
+                            <td>B. Climate modeling</td>
+                            <td><input type="text" name="match12" maxlength="1" style="width:2em;"></td>
+                        </tr>
+                        <tr>
+                            <td>13. Environmental science</td>
+                            <td>C. Stress analysis model</td>
+                            <td><input type="text" name="match13" maxlength="1" style="width:2em;"></td>
+                        </tr>
+                        <tr>
+                            <td>14. Business</td>
+                            <td>D. Financial modeling</td>
+                            <td><input type="text" name="match14" maxlength="1" style="width:2em;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" id="submit-matching" style="margin:1em 0; padding:0.5em 1.5em; background:#8b5309; color:#fff; border:none; border-radius:6px; font-size:1em; font-weight:bold; cursor:pointer;">
+                    Submit Matching
+                </button>
+            </form>
+            <div id="matching-score" style="margin:1em 0; font-size:1.1em;"></div>
+            <script>
+                document.getElementById('submit-matching').addEventListener('click', async function() {
+                    // Correct answers: 11:C, 12:A, 13:B, 14:D
+                    const correct = {match11: 'C', match12: 'A', match13: 'B', match14: 'D'};
+                    let score = 0;
+                    for (let i = 11; i <= 14; i++) {
+                        const val = document.querySelector(`[name=match${i}]`).value.trim().toUpperCase();
+                        if (val === correct['match' + i]) score++;
+                    }
+                    document.getElementById('matching-score').innerHTML = `<strong>Matching Score: ${score}/4</strong>`;
+                    this.disabled = true;
+                    this.style.background = '#ccc';
+                    this.innerText = 'Submitted';
+                    // await supabase.from('grade12_matching').insert([{score: score, timestamp: new Date().toISOString()}]);
+                });
+            </script>
+            <h4>Part D: Application/Discussion (3 marks each)</h4>
+            <form id="discussion-form">
+                <ol start="15">
+                    <li>
+                        Can a simulation exist without a model? Explain.<br>
+                        <textarea name="disc15" rows="2" style="width:100%;"></textarea>
+                        <span class="disc-feedback" id="feedback-disc15"></span>
+                    </li>
+                    <li>
+                        Can a model exist without a simulation? Give an example.<br>
+                        <textarea name="disc16" rows="2" style="width:100%;"></textarea>
+                        <span class="disc-feedback" id="feedback-disc16"></span>
+                    </li>
+                    <li>
+                        Think of a model or simulation you’ve seen in the media. What was it used for?<br>
+                        <textarea name="disc17" rows="2" style="width:100%;"></textarea>
+                        <span class="disc-feedback" id="feedback-disc17"></span>
+                    </li>
+                </ol>
+                <button type="button" id="submit-discussion" style="margin:1em 0; padding:0.5em 1.5em; background:#8b5309; color:#fff; border:none; border-radius:6px; font-size:1em; font-weight:bold; cursor:pointer;">
+                    Submit Discussion Answers
+                </button>
+            </form>
+            <div id="discussion-score" style="margin:1em 0; font-size:1.1em;"></div>
+            <script>
+                async function gradeDiscussion(question, answer) {
+                    const prompt = `Grade the following student answer for the question: "${question}". Give feedback and a mark out of 3. Student answer: "${answer}"`;
+                    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "Authorization": `Bearer ${OPENAI_API_KEY}`
+                        },
+                        body: JSON.stringify({
+                            model: "gpt-3.5-turbo",
+                            messages: [{role: "user", content: prompt}],
+                            max_tokens: 80,
+                            temperature: 0.2
+                        })
+                    });
+                    const data = await response.json();
+                    return data.choices && data.choices[0] ? data.choices[0].message.content : "No feedback.";
+                }
+
+                document.getElementById('submit-discussion').addEventListener('click', async function() {
+                    const questions = [
+                        "Can a simulation exist without a model? Explain.",
+                        "Can a model exist without a simulation? Give an example.",
+                        "Think of a model or simulation you’ve seen in the media. What was it used for?"
+                    ];
+                    let total = 0;
+                    for (let i = 15; i <= 17; i++) {
+                        const answer = document.querySelector(`[name=disc${i}]`).value.trim();
+                        const feedbackEl = document.getElementById('feedback-disc' + i);
+                        feedbackEl.innerHTML = '<span style="color:#888;">Checking...</span>';
+                        const feedback = await gradeDiscussion(questions[i - 15], answer);
+                        feedbackEl.innerHTML = feedback;
+                        const markMatch = feedback.match(/([0-3])\s*\/\s*3/);
+                        if (markMatch) total += parseInt(markMatch[1]);
+                    }
+                    document.getElementById('discussion-score').innerHTML = `<strong>Discussion Score: ${total}/9</strong>`;
+                    this.disabled = true;
+                    this.style.background = '#ccc';
+                    this.innerText = 'Submitted';
+                });
+            </script>
+            
+    <script>
+        document.getElementById('show-test-btn').addEventListener('click', function() {
+            var testDiv = document.getElementById('grade12-test');
+            if (testDiv.style.display === 'none') {
+                testDiv.style.display = 'block';
+                this.style.display = 'none';
+                testDiv.scrollIntoView({behavior: 'smooth'});
+            }
+        });
+    </script>
+
+
+
+
+    <footer>
+        &copy; 2024 Marianville Secondary School
+    </footer>
+</body>
+</html>
