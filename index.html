@@ -12,6 +12,84 @@
             flex-direction: column;
             min-height: 100vh;
         }
+
+ .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            flex: 1 1 320px;
+            min-width: 320px;
+            max-width: 400px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(30,136,229,0.16);
+        }
+        .card h2 {
+            margin: 0 0 1rem 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #444;
+            text-align: center;
+        }
+        .topics {
+            margin: 2rem auto 0 auto;
+            max-width: 900px;
+            background: #e3f2fd;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        .topics h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .topics ul {
+            columns: 2;
+            column-gap: 2rem;
+            padding-left: 1.2rem;
+            margin: 1rem 0 0 0;
+            font-size: 1.05rem;
+        }
+        .topics li {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .topics ul {
+                columns: 1;
+            }
+        }
+
+
+
+
+
+
+        
         .main-layout {
             display: flex;
             flex: 1;
@@ -132,8 +210,15 @@
             </ul>
         </aside>
         <main class="content">
-            <h1>Student List</h1>
-           <h2>Information will be posted soon</h2>
+            <div class = "container">
+                <div class ="card">
+                    <h1>Student List</h1>
+                    <h2>Information will be posted soon</h2>
+                </div>
+
+
+
+            </div>
         </main>
     </div>
     <footer>
