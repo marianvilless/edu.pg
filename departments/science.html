@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Science Department | Marianville Secondary School</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e88e5;
+            --accent: #43a047;
+            --bg: #f5f7fa;
+            --card-bg: #fff;
+            --shadow: 0 4px 24px rgba(30,136,229,0.08);
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg);
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            flex: 1 1 320px;
+            min-width: 320px;
+            max-width: 400px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(30,136,229,0.16);
+        }
+        .card h2 {
+            margin: 0 0 1rem 0;
+            color: var(--primary);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #444;
+            text-align: center;
+        }
+        .topics {
+            margin: 2rem auto 0 auto;
+            max-width: 900px;
+            background: #e3f2fd;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+        .topics h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .topics ul {
+            columns: 2;
+            column-gap: 2rem;
+            padding-left: 1.2rem;
+            margin: 1rem 0 0 0;
+            font-size: 1.05rem;
+        }
+        .topics li {
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .topics ul {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Science Department</h1>
+        <p>Marianville Secondary School</p>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>
+                To inspire curiosity, critical thinking, and a lifelong passion for discovery through hands-on learning and scientific inquiry.
+            </p>
+        </div>
+        <div class="card">
+            <h2>What We Offer</h2>
+            <p>
+                Comprehensive courses in Biology, Chemistry, Physics, and Environmental Science, supported by modern labs and experienced teachers.
+            </p>
+        </div>
+        <div class="card">
+            <h2>Extracurriculars</h2>
+            <p>
+                Science Club, Olympiads, field trips, and STEM fairs to encourage exploration beyond the classroom.
+            </p>
+        </div>
+    </div>
+    <section class="topics">
+        <h3>Key Topics Covered</h3>
+        <ul>
+            <li>Scientific Method &amp; Inquiry</li>
+            <li>Cell Biology &amp; Genetics</li>
+            <li>Human Anatomy &amp; Physiology</li>
+            <li>Chemical Reactions &amp; Stoichiometry</li>
+            <li>Physics of Motion &amp; Energy</li>
+            <li>Ecology &amp; Environmental Science</li>
+            <li>Earth &amp; Space Science</li>
+            <li>Laboratory Skills &amp; Safety</li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>English Department | Marianville Secondary School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2d3e50;
+            --accent: #e67e22;
+            --bg: #f4f6fa;
+            --card-bg: #fff;
+            --shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+        }
+        h2 {
+            color: var(--accent);
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 1.2rem;
+        }
+        .faculty-list {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .faculty-member {
+            flex: 1 1 220px;
+            background: #f9f9fb;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.06);
+            text-align: center;
+        }
+        .faculty-member img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 0.5rem;
+            border: 2px solid var(--accent);
+        }
+        @media (max-width: 700px) {
+            .faculty-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>English Department</h1>
+        <p>Marianville Secondary School</p>
+    </header>
+    <div class="container">
+        <section class="card">
+            <h2>About Our Department</h2>
+            <p>
+                The English Department at Marianville Secondary School is dedicated to fostering a love for literature, language, and effective communication. Our curriculum encourages critical thinking, creativity, and cultural awareness through a diverse range of texts and engaging activities.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Courses Offered</h2>
+            <ul>
+                <li>English Language & Literature (Years 7-12)</li>
+                <li>Creative Writing</li>
+                <li>Drama and Performance</li>
+                <li>Media Studies</li>
+                <li>Debate & Public Speaking</li>
+            </ul>
+        </section>
+        <section class="card">
+            <h2>Faculty</h2>
+            <div class="faculty-list">
+                <div class="faculty-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ms. Jane Smith">
+                    <strong>Ms. Jane Smith</strong><br>
+                    Head of Department
+                </div>
+                <div class="faculty-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Mr. John Doe">
+                    <strong>Mr. John Doe</strong><br>
+                    Senior English Teacher
+                </div>
+                <div class="faculty-member">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ms. Emily Brown">
+                    <strong>Ms. Emily Brown</strong><br>
+                    Literature Specialist
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Extracurricular Activities</h2>
+            <ul>
+                <li>Annual Literary Festival</li>
+                <li>School Newspaper</li>
+                <li>Book Club</li>
+                <li>Inter-school Debates</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

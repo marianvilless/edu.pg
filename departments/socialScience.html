@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Science Department | Marianville Secondary School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2d3e50;
+            --accent: #f9b233;
+            --bg: #f5f7fa;
+            --card-bg: #fff;
+            --text: #222;
+            --shadow: 0 4px 24px rgba(45,62,80,0.08);
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 60%, var(--accent) 100%);
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        nav {
+            margin: 1.5rem auto 0 auto;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+        .intro {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        .intro img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid var(--accent);
+            box-shadow: 0 2px 12px rgba(249,178,51,0.12);
+        }
+        .intro-text {
+            flex: 1;
+        }
+        .subjects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .subject-card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 1.5rem;
+            transition: transform 0.18s, box-shadow 0.18s;
+            border-left: 6px solid var(--accent);
+        }
+        .subject-card:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(45,62,80,0.13);
+        }
+        .subject-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+            font-size: 1.3rem;
+        }
+        .subject-card ul {
+            margin: 0.5rem 0 0 1.2rem;
+            padding: 0;
+        }
+        .faculty-section {
+            margin-top: 3rem;
+        }
+        .faculty-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        .faculty-card {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: var(--shadow);
+            padding: 1.2rem 1.5rem;
+            min-width: 220px;
+            flex: 1 1 220px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .faculty-card img {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+        }
+        .faculty-info {
+            flex: 1;
+        }
+        .faculty-info h4 {
+            margin: 0 0 0.2rem 0;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+        .faculty-info p {
+            margin: 0;
+            font-size: 0.98rem;
+            color: #555;
+        }
+        @media (max-width: 700px) {
+            .intro {
+                flex-direction: column;
+                text-align: center;
+            }
+            .faculty-list {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Social Science Department</h1>
+        <p>Marianville Secondary School</p>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/departments.html">Departments</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="intro">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=256&q=80" alt="Social Science Icon">
+            <div class="intro-text">
+                <h2>Welcome to Social Science</h2>
+                <p>
+                    The Social Science Department fosters critical thinking, cultural awareness, and a deeper understanding of society. Our curriculum empowers students to explore history, geography, economics, and civics, preparing them to be informed and engaged citizens.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Subjects Offered</h2>
+            <div class="subjects-grid">
+                <div class="subject-card">
+                    <h3>History</h3>
+                    <ul>
+                        <li>World History</li>
+                        <li>National & Local History</li>
+                        <li>Historical Research Skills</li>
+                    </ul>
+                </div>
+                <div class="subject-card">
+                    <h3>Geography</h3>
+                    <ul>
+                        <li>Physical & Human Geography</li>
+                        <li>Environmental Studies</li>
+                        <li>Map Skills</li>
+                    </ul>
+                </div>
+                <div class="subject-card">
+                    <h3>Economics</h3>
+                    <ul>
+                        <li>Micro & Macro Economics</li>
+                        <li>Personal Finance</li>
+                        <li>Development Studies</li>
+                    </ul>
+                </div>
+                <div class="subject-card">
+                    <h3>Civics & Citizenship</h3>
+                    <ul>
+                        <li>Government & Politics</li>
+                        <li>Human Rights</li>
+                        <li>Community Engagement</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="faculty-section">
+            <h2>Meet Our Faculty</h2>
+            <div class="faculty-list">
+                <div class="faculty-card">
+                    <img src="" alt="Ms. Jane Doe">
+                    <div class="faculty-info">
+                        <h4>Ms. Jane Doe</h4>
+                        <p>Head of Department, History Specialist</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <img src="" alt="Mr. John Smith">
+                    <div class="faculty-info">
+                        <h4>Mr. John Smith</h4>
+                        <p>Geography & Environmental Studies</p>
+                    </div>
+                </div>
+                <div class="faculty-card">
+                    <img src="" alt="Ms. Emily Clark">
+                    <div class="faculty-info">
+                        <h4>Ms. Emily Clark</h4>
+                        <p>Economics & Civics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

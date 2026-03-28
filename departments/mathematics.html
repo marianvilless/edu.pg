@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mathematics Department | Marianville Secondary School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2d3a4b;
+            --accent: #f9b233;
+            --bg: #f5f7fa;
+            --card-bg: #fff;
+            --shadow: 0 4px 24px rgba(45,58,75,0.08);
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary) 70%, var(--accent) 100%);
+            color: #fff;
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        nav {
+            margin: 1.5rem auto 0 auto;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            transition: background 0.2s;
+        }
+        nav a:hover {
+            background: rgba(249,178,51,0.15);
+        }
+        main {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 0 1.5rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.15s;
+        }
+        .card:hover {
+            transform: translateY(-4px) scale(1.01);
+        }
+        .topics-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .topic {
+            background: linear-gradient(135deg, #eaf0fa 60%, #f9b23322 100%);
+            border-radius: 12px;
+            padding: 1.2rem 1rem;
+            box-shadow: 0 2px 8px rgba(45,58,75,0.06);
+            font-weight: 500;
+            color: var(--primary);
+            transition: box-shadow 0.2s;
+        }
+        .topic:hover {
+            box-shadow: 0 6px 20px rgba(45,58,75,0.13);
+        }
+        .faculty-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+        .faculty {
+            background: #f9b23311;
+            border-left: 4px solid var(--accent);
+            border-radius: 8px;
+            padding: 1rem 1.2rem;
+            flex: 1 1 220px;
+            min-width: 200px;
+        }
+        .faculty strong {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 2rem; }
+            .card { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mathematics Department</h1>
+        <p>Marianville Secondary School</p>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../departments.html">Departments</a>
+            <a href="#">Mathematics</a>
+            <a href="../contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Welcome</h2>
+            <p>
+                The Mathematics Department is dedicated to fostering analytical thinking, problem-solving skills, and a love for mathematics in all students. We offer a comprehensive curriculum from foundational concepts to advanced topics, preparing students for academic and real-world success.
+            </p>
+        </section>
+        <section class="card">
+            <h2>Core Topics</h2>
+            <div class="topics-list">
+                <div class="topic">Algebra &amp; Functions</div>
+                <div class="topic">Geometry &amp; Trigonometry</div>
+                <div class="topic">Calculus</div>
+                <div class="topic">Statistics &amp; Probability</div>
+                <div class="topic">Mathematical Reasoning</div>
+                <div class="topic">Discrete Mathematics</div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Faculty</h2>
+            <div class="faculty-list">
+                <div class="faculty">
+                    <strong>Dr. Alice Mensah</strong>
+                    Head of Department<br>
+                    <em>Pure Mathematics, Calculus</em>
+                </div>
+                <div class="faculty">
+                    <strong>Mr. Samuel Ofori</strong>
+                    <br>
+                    <em>Statistics, Probability</em>
+                </div>
+                <div class="faculty">
+                    <strong>Ms. Linda Boateng</strong>
+                    <br>
+                    <em>Geometry, Trigonometry</em>
+                </div>
+                <div class="faculty">
+                    <strong>Mrs. Grace Owusu</strong>
+                    <br>
+                    <em>Algebra, Mathematical Reasoning</em>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
